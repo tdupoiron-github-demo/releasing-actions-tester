@@ -1,0 +1,23 @@
+name: Dice Roll Action
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: build action
+        run: |
+          cd actions/dice-roll
+          npm install
+          npm run build
+      - name: Dice Roll
+        id: dice
+        uses: ./.github/actions/dice-roll
+        with:
+          sides: 6
+      - name: Print Dice Roll
+        run: |
+          echo "The dice roll is ${{ steps.dice.outputs.roll }}"

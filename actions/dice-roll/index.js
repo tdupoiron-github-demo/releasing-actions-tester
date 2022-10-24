@@ -1,5 +1,5 @@
 const core = require('@actions/core');
 
-const faces = core.getInput("faces");
+const sides = core.getInput("sides");
 
-core.setOutput("roll", Math.floor(Math.random() * faces) + 1);
+core.setOutput("roll", Math.floor(Math.random() * sides) + 1);

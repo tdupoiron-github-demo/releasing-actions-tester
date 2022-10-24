@@ -5,7 +5,7 @@ inputs:
   format:
     description: 'Time format'
     required: false
-    default: 'YYYY-MM-DD HH:mm:ss'
+    default: 'YYYY-MM-DD HH:MM:ss'
 
 outputs:
   time:

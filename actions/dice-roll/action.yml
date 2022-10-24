@@ -2,8 +2,8 @@ name: 'Dice Roll'
 description: 'An action that gets a random value between 1 and 6'
 
 inputs:
-  format:
-    description: 'faces'
+  sides:
+    description: 'Number of sides'
     required: false
     default: '6'
 
