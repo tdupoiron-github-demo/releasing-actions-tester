@@ -2,6 +2,7 @@ name: Get Current Time
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   build:
