@@ -1,0 +1,16 @@
+name: 'Get Current Time'
+description: 'An action that gets the current time'
+
+inputs:
+  format:
+    description: 'Time format'
+    required: false
+    default: 'YYYY-MM-DD HH:mm:ss'
+
+outputs:
+  time:
+    description: 'The time we greeted you'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
