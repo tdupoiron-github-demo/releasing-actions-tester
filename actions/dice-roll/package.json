@@ -4,7 +4,7 @@
   "description": "Roll a dice and returns the value",
   "main": "index.js",
   "scripts": {
-    "test": "npm index.js"
+    "test": "node index.js"
   },
   "author": "",
   "license": "ISC",
