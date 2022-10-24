@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: install action
+        run: |
+          cd actions/dice-roll
+          npm install
       - name: Get Current Time
         id: time
         uses: ./.github/actions/current-time
