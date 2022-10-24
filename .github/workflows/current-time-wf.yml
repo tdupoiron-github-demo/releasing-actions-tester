@@ -16,8 +16,6 @@ jobs:
       - name: Get Current Time
         id: time
         uses: ./actions/current-time
-        with:
-          format: 'yyyy-mmm-ddd HH:MM:ss'
       - name: Print Current Time
         run: |
           echo "The current time is ${{ steps.time.outputs.time }}"
