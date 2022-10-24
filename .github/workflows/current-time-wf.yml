@@ -13,6 +13,8 @@ jobs:
         run: |
           cd actions/dice-roll
           npm install
+          npm install --save dateformat
+      - run: ls -al ./actions/current-time/node_modules
       - name: Get Current Time
         id: time
         uses: ./actions/current-time
