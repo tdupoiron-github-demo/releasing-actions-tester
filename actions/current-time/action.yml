@@ -1,12 +1,6 @@
 name: 'Get Current Time'
 description: 'An action that gets the current time'
 
-inputs:
-  format:
-    description: 'Time format'
-    required: false
-    default: 'YYYY-MM-DD HH:MM:ss'
-
 outputs:
   time:
     description: 'The time we greeted you'
