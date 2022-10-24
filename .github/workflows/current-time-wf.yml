@@ -15,7 +15,7 @@ jobs:
           npm install
       - name: Get Current Time
         id: time
-        uses: ./.github/actions/current-time
+        uses: ./actions/current-time
         with:
           format: 'yyyy-mmm-ddd HH:MM:ss'
       - name: Print Current Time

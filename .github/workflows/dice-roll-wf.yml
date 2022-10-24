@@ -15,7 +15,7 @@ jobs:
           npm install
       - name: Dice Roll
         id: dice
-        uses: ./.github/actions/dice-roll
+        uses: ./actions/dice-roll
         with:
           sides: 6
       - name: Print Dice Roll
