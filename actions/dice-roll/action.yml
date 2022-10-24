@@ -1,0 +1,16 @@
+name: 'Dice Roll'
+description: 'An action that gets a random value between 1 and 6'
+
+inputs:
+  format:
+    description: 'faces'
+    required: false
+    default: '6'
+
+outputs:
+  roll:
+    description: 'The value of the dice'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
