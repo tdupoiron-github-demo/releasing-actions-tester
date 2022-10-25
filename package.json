@@ -1,6 +1,6 @@
 {
   "name": "releasing-actions",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,20 +23,23 @@
   "release": {
     "branches": [
       "main"
-    ]
-  },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": false,
-        "tarballDir": "dist"
-      }
     ],
-    ["@semantic-release/github", {
-      "assets": "dist/*.tgz"
-    }]
-  ]
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false,
+          "tarballDir": "dist"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": "dist/*.tgz"
+        }
+      ]
+    ]
+  }
 }
