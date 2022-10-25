@@ -1,6 +1,6 @@
 {
   "name": "releasing-actions",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,14 @@
     ]
   },
   "plugins": [
-    ["@semantic-release/npm", {
-      "npmPublish": false,
-      "tarballDir": "dist"
-    }]
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false,
+        "tarballDir": "dist"
+      }
+    ]
   ]
 }
