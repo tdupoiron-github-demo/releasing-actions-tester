@@ -9,7 +9,7 @@ inputs:
 
 outputs:
   roll:
-    description: 'The value of the dice'
+    description: 'The value returned by the dice'
 
 runs:
   using: 'node16'
