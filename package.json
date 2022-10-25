@@ -1,6 +1,6 @@
 {
   "name": "releasing-actions",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,9 @@
         "npmPublish": false,
         "tarballDir": "dist"
       }
-    ]
+    ],
+    ["@semantic-release/github", {
+      "assets": "dist/*.tgz"
+    }]
   ]
 }
