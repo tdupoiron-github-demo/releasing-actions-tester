@@ -1,6 +1,6 @@
 {
   "name": "releasing-actions",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,8 @@
     "semantic-release": "^19.0.5"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [
+      "main"
+    ]
   }
 }
