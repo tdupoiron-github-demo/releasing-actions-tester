@@ -1,6 +1,6 @@
 {
   "name": "releasing-actions",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,8 +26,9 @@
     ]
   },
   "plugins": [
-    "@semantic-release/npm", {
-      "npmPublish": false
-    }
+    ["@semantic-release/npm", {
+      "npmPublish": false,
+      "tarballDir": "dist"
+    }]
   ]
 }
