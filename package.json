@@ -1,0 +1,26 @@
+{
+  "name": "releasing-actions",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tdupoiron-github-demo/releasing-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdupoiron-github-demo/releasing-actions/issues"
+  },
+  "homepage": "https://github.com/tdupoiron-github-demo/releasing-actions#readme",
+  "devDependencies": {
+    "semantic-release": "^19.0.5"
+  },
+  "release": {
+    "branches": ["main"]
+  }
+}
