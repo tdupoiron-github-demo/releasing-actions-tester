@@ -1,19 +1,16 @@
 {
-  "name": "current-time",
-  "version": "1.0.0-alpha.1",
-  "description": "GitHub action to get the current time formatted",
+  "name": "yarn",
+  "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && node esbuild.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0"
   },
   "devDependencies": {
-    "esbuild": "^0.15.12",
-    "semantic-release-monorepo": "^7.0.5"
+    "esbuild": "^0.15.12"
   }
 }

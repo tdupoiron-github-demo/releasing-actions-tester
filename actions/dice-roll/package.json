@@ -4,13 +4,16 @@
   "description": "Roll a dice and returns the value",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "semantic-release": "semantic-release --no-ci"
+    "build": "rm -rf dist && node esbuild.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.10.0",
+    "@actions/core": "^1.10.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.12",
     "semantic-release-monorepo": "^7.0.5"
   }
 }
