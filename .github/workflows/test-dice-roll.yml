@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Dice Roll
         id: dice
-        uses: tdupoiron-github-demo/releasing-actions/actions/dice-roll@dice-roll-v2.0.0
+        uses: tdupoiron-github-demo/releasing-actions/actions/dice-roll@dice-roll-v2.0.1
         with:
           sides: 10
       - name: Print Dice Roll

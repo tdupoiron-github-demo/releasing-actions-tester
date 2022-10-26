@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get Current Time
         id: time
-        uses: tdupoiron-github-demo/releasing-actions/actions/current-time@current-time-v2.0.0
+        uses: tdupoiron-github-demo/releasing-actions/actions/current-time@current-time-v2.0.1
       - name: Print Current Time
         run: |
           echo "The current time is ${{ steps.time.outputs.time }}"
