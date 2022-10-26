@@ -1,17 +1,18 @@
-name: Dice Roll Action
+name: Test Dice Roll Action
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: actions/dice-roll
     steps:
       - uses: actions/checkout@v2
       - name: install action
         run: |
-          cd actions/dice-roll
           npm install
       - name: Dice Roll
         id: dice

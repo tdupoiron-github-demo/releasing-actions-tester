@@ -1,11 +1,11 @@
 {
   "name": "current-time",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "GitHub action to get the current time formatted",
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --no-ci"
   },
   "author": "",
   "license": "ISC",
