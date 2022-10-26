@@ -1,12 +1,13 @@
-name: Get Current Time
+name: Test Current Time Action
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: actions/current-time
     steps:
       - uses: actions/checkout@v2
       - name: install action
