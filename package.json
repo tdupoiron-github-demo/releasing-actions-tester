@@ -18,13 +18,23 @@
   },
   "homepage": "https://github.com/tdupoiron-github-demo/releasing-actions#readme",
   "devDependencies": {
-    "semantic-release": "^19.0.5"
+    "semantic-release": "^19.0.5",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "release": {
     "branches": [
-      {"name": "main"},
-      {"name": "beta", "channel": "beta"}, 
-      {"name": "alpha", "channel": "alpha", "prerelease": true}
+      {
+        "name": "main"
+      },
+      {
+        "name": "beta",
+        "channel": "beta"
+      },
+      {
+        "name": "alpha",
+        "channel": "alpha",
+        "prerelease": true
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",

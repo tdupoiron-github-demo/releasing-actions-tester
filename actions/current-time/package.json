@@ -4,7 +4,8 @@
   "description": "GitHub action to get the current time formatted",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "semantic-release": "semantic-release"
   },
   "author": "",
   "license": "ISC",
