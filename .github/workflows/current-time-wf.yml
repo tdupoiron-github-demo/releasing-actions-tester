@@ -1,7 +1,6 @@
-name: Get Current Time
+name: Test Current Time Action
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:

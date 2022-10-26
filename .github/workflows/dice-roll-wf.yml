@@ -1,7 +1,6 @@
-name: Dice Roll Action
+name: Test Dice Roll Action
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:

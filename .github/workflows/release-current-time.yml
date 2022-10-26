@@ -1,4 +1,4 @@
-name: Build
+name: Release Current Time Action
 
 on:
   push:
