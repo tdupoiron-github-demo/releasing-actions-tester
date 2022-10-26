@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Dice Roll
         id: dice
-        uses: tdupoiron-github-demo/releasing-actions/actions/dice-roll@dice-roll-v1.1.0
+        uses: tdupoiron-github-demo/releasing-actions/actions/dice-roll@dice-roll-v2.0.0
         with:
-          sides: 6
+          sides: 10
       - name: Print Dice Roll
         run: |
           echo "The dice roll is ${{ steps.dice.outputs.roll }}"
