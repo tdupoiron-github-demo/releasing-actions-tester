@@ -4,17 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-
-  build:
+  test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: actions/dice-roll
     steps:
-      - uses: actions/checkout@v2
-      - name: install action
-        run: |
-          npm install
       - name: Dice Roll
         id: dice
         uses: tdupoiron-github-demo/releasing-actions/actions/dice-roll@dice-roll-v1.0.0
