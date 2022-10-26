@@ -7,8 +7,9 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    env:
-      working-directory: actions/dice-roll
+    defaults:
+      run:
+        working-directory: actions/dice-roll
     steps:
       - uses: actions/checkout@v2
       - name: install action

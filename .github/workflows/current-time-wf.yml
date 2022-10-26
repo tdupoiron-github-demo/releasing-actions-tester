@@ -6,13 +6,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      working-directory: actions/current-time
+    defaults:
+      run:
+        working-directory: actions/current-time
     steps:
       - uses: actions/checkout@v2
       - name: install action
         run: |
-          cd actions/current-time
           npm install
       - name: Get Current Time
         id: time
